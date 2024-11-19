@@ -1,1 +1,49 @@
 @charset "UTF-8";
+
+/* 全体のリセット */
+* {
+  margin: 5;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 画面全体の配置 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* テキストボックスの大きさ */
+input[type=text] {
+  height: 30px;
+  width: 100%; /* 横幅を100%に設定 */
+  max-width: 300px; /* 必要に応じて横幅の最大値を指定 */
+}
+
+/* ボタンの間隔やサイズ */
+.example input:first-of-type {
+  margin-right: 100px;
+}
+.example {
+  text-align: center;
+}
+
+/* ドラッグアンドドロップエリアのスタイル */
+.drop-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+  color: #999;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  width: 100%; /* 横幅を入力フィールドと同じに設定 */
+  max-width: 300px; /* 必要に応じて横幅の最大値を指定 */
+}
+
+.drop-area.dragover {
+  background-color: #e0f7fa;
+}
